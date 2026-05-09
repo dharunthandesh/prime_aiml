@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT Learn Hub | Course Platform</title>
+    <meta name="description" content="A modern, interactive learning platform to track your course progress.">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen" class="login-screen active">
+        <div class="login-card">
+            <div class="logo justify-center mb-6">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>DT Learn Hub</span>
+            </div>
+            <h2 class="text-center">Welcome Back</h2>
+            <p class="text-center mb-6">Please login to access your courses</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <div class="error-msg" id="login-error"></div>
+                <button type="button" id="login-btn" class="btn-primary w-100">Login to Platform</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="app-container" id="app-container" style="display: none;">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>DT Learn Hub</span>
+                </div>
+                <div class="course-progress">
+                    <div class="progress-info">
+                        <span class="progress-text">Course Progress</span>
+                        <span class="progress-percentage" id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="curriculum" id="curriculum-list">
+                <!-- Curriculum items will be injected by JS -->
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1 class="course-title">PRIME COURSE</h1>
+                <div class="user-profile" style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="avatar">
+                        <img src="https://ui-avatars.com/api/?name=DT&background=6366f1&color=fff" alt="User Avatar">
+                    </div>
+                    <button id="logout-btn" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem; background: transparent; border: 1px solid var(--border-color); color: var(--text-secondary);">Logout</button>
+                </div>
+            </header>
+
+            <div class="video-container">
+                <!-- Placeholder for Media -->
+                <div class="video-player" id="video-player">
+                    <div class="video-placeholder">
+                        <i class="fa-regular fa-circle-play fa-4x"></i>
+                        <h2 id="current-lesson-title">Select a lesson to begin</h2>
+                        <p>Video content will load here</p>
+                    </div>
+                </div>
+                
+                <div class="lesson-info">
+                    <div class="lesson-header">
+                        <h2 class="lesson-title" id="lesson-info-title">Welcome to the Course</h2>
+                        <button id="mark-complete-btn" class="btn-complete">
+                            <i class="fa-solid fa-check"></i> Mark as Completed
+                        </button>
+                    </div>
+                    <div class="lesson-description" id="lesson-description">
+                        <p>Choose a module from the sidebar to start your learning journey. Make sure to mark lessons as completed to track your progress!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
