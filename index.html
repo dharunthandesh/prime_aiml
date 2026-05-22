@@ -64,6 +64,11 @@
             <header class="top-nav">
                 <h1 class="course-title">PRIME COURSE</h1>
                 <div class="user-profile" style="display: flex; align-items: center; gap: 1rem;">
+                    <!-- Video Server URL Input for local streaming on deployed web app -->
+                    <div class="video-server-config" style="display: flex; align-items: center; gap: 0.5rem; background: var(--bg-tertiary); padding: 0.25rem 0.75rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <i class="fa-solid fa-server" style="color: var(--text-secondary); font-size: 0.85rem;"></i>
+                        <input type="text" id="video-server-url" placeholder="Local Server URL (e.g. http://localhost:8000)" style="background: transparent; border: none; color: var(--text-primary); font-size: 0.85rem; width: 250px; outline: none;" title="Set local video server URL to play offline videos on the deployed app">
+                    </div>
                     <div class="avatar">
                         <img src="https://ui-avatars.com/api/?name=DT&background=6366f1&color=fff" alt="User Avatar">
                     </div>

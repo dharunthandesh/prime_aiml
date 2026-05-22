@@ -2,6 +2,7 @@
 let courseData = { modules: [] };
 let currentLessonId = null;
 const expandedModules = new Set();
+let videoServerUrl = localStorage.getItem('primeVideoServerUrl') || '';
 
 // DOM Elements
 const curriculumList = document.getElementById('curriculum-list');
@@ -74,6 +75,26 @@ function initApp() {
     // Event listener for mark complete button (remove old ones first to prevent duplicates if initApp called multiple times)
     markCompleteBtn.removeEventListener('click', toggleLessonCompletion);
     markCompleteBtn.addEventListener('click', toggleLessonCompletion);
+
+    // Setup Video Server Input
+    const videoServerInput = document.getElementById('video-server-url');
+    if (videoServerInput) {
+        videoServerInput.value = videoServerUrl;
+        // Bind input event to save URL and reload current video dynamically
+        videoServerInput.replaceWith(videoServerInput.cloneNode(true));
+        const newInput = document.getElementById('video-server-url');
+        newInput.addEventListener('input', (e) => {
+            let val = e.target.value.trim();
+            if (val.endsWith('/')) {
+                val = val.slice(0, -1);
+            }
+            videoServerUrl = val;
+            localStorage.setItem('primeVideoServerUrl', videoServerUrl);
+            if (currentLessonId) {
+                loadLesson(currentLessonId);
+            }
+        });
+    }
 }
 
 // Find lesson by ID
@@ -161,9 +182,10 @@ function loadLesson(lessonId) {
     
     // Inject Video Player
     if (lesson.videoSrc) {
+        const resolvedSrc = videoServerUrl ? `${videoServerUrl}/${lesson.videoSrc}` : lesson.videoSrc;
         videoPlayer.innerHTML = `
-            <video id="plyr-video" controls crossorigin playsinline style="width: 100%; height: 100%; object-fit: contain; background: #000;">
-                <source src="${encodeURI(lesson.videoSrc)}" type="video/mp4">
+            <video id="plyr-video" controls playsinline style="width: 100%; height: 100%; object-fit: contain; background: #000;">
+                <source src="${encodeURI(resolvedSrc)}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         `;
