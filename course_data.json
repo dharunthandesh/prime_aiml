@@ -5272,10 +5272,182 @@
         },
         {
             "id": "m50",
-            "title": "GSOC",
+            "title": "DAY 60",
             "lessons": [
                 {
                     "id": "l623",
+                    "title": "01) Introduction to GANs.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/01) Introduction to GANs.mp4"
+                },
+                {
+                    "id": "l624",
+                    "title": "02) GAN Architecture.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/02) GAN Architecture.mp4"
+                },
+                {
+                    "id": "l625",
+                    "title": "03) Generator Network.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/03) Generator Network.mp4"
+                },
+                {
+                    "id": "l626",
+                    "title": "04) Setting up Celeba Dataset.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/04) Setting up Celeba Dataset.mp4"
+                },
+                {
+                    "id": "l627",
+                    "title": "05) Generator Network (Implementation).mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/05) Generator Network (Implementation).mp4"
+                },
+                {
+                    "id": "l628",
+                    "title": "06) Discriminator Network.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/06) Discriminator Network.mp4"
+                },
+                {
+                    "id": "l629",
+                    "title": "07) Discriminator Network (Implementation).mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/07) Discriminator Network (Implementation).mp4"
+                },
+                {
+                    "id": "l630",
+                    "title": "08) Training the GAN.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/08) Training the GAN.mp4"
+                },
+                {
+                    "id": "l631",
+                    "title": "09) Show Generated Fake Images.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/09) Show Generated Fake Images.mp4"
+                },
+                {
+                    "id": "l632",
+                    "title": "10) Output after 1st & 2nd Epoch.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 60",
+                    "completed": false,
+                    "videoSrc": "DAY 60/10) Output after 1st & 2nd Epoch.mp4"
+                }
+            ]
+        },
+        {
+            "id": "m51",
+            "title": "DAY 61",
+            "lessons": [
+                {
+                    "id": "l633",
+                    "title": "01) Introduction to Agentic AI.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/01) Introduction to Agentic AI.mp4"
+                },
+                {
+                    "id": "l634",
+                    "title": "02) Agentic AI vs AI Agents.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/02) Agentic AI vs AI Agents.mp4"
+                },
+                {
+                    "id": "l635",
+                    "title": "03) Agentic AI Frameworks & Platforms.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/03) Agentic AI Frameworks & Platforms.mp4"
+                },
+                {
+                    "id": "l636",
+                    "title": "04) Core Concepts of Agentic AI.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/04) Core Concepts of Agentic AI.mp4"
+                },
+                {
+                    "id": "l637",
+                    "title": "05) Our First Agent (with Agno).mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/05) Our First Agent (with Agno).mp4"
+                },
+                {
+                    "id": "l638",
+                    "title": "06) Build Finance Agent.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/06) Build Finance Agent.mp4"
+                },
+                {
+                    "id": "l639",
+                    "title": "07) Teams in Agno.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/07) Teams in Agno.mp4"
+                },
+                {
+                    "id": "l640",
+                    "title": "08) Agents with Memory.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/08) Agents with Memory.mp4"
+                },
+                {
+                    "id": "l641",
+                    "title": "09) Youtube Video Analyzer (Agentic AI Agent).mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/09) Youtube Video Analyzer (Agentic AI Agent).mp4"
+                },
+                {
+                    "id": "l642",
+                    "title": "10) Deploy Agent with Streamlit.mp4",
+                    "duration": "Video",
+                    "description": "Lesson from DAY 61",
+                    "completed": false,
+                    "videoSrc": "DAY 61/10) Deploy Agent with Streamlit.mp4"
+                }
+            ]
+        },
+        {
+            "id": "m52",
+            "title": "GSOC",
+            "lessons": [
+                {
+                    "id": "l643",
                     "title": "2025-12-27 20-04-08.mkv",
                     "duration": "Video",
                     "description": "Lesson from GSOC",
